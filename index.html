@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey to help us improve.</p>
+
+  <form id="survey-form">
+    <!-- Name Field -->
+    <label id="name-label" for="name">Name:</label>
+    <input 
+      id="name" 
+      type="text" 
+      placeholder="Enter your name" 
+      required 
+    >
+    <br>
+
+    <!-- Email Field -->
+    <label id="email-label" for="email">Email:</label>
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="Enter your email" 
+      required 
+    >
+    <br>
+
+    <!-- Number Field -->
+    <label id="number-label" for="number">Age:</label>
+    <input 
+      id="number" 
+      type="number" 
+      placeholder="Enter your age" 
+      min="18" 
+      max="99" 
+    >
+    <br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+    <br>
+
+    <!-- Radio Buttons -->
+    <p>What is your favorite color?</p>
+    <input 
+      type="radio" 
+      id="red" 
+      name="color" 
+      value="red"
+    >
+    <label for="red">Red</label>
+    <br>
+    <input 
+      type="radio" 
+      id="blue" 
+      name="color" 
+      value="blue"
+    >
+    <label for="blue">Blue</label>
+    <br>
+
+    <!-- Checkboxes -->
+    <p>What hobbies do you enjoy?</p>
+    <input 
+      type="checkbox" 
+      id="hobby1" 
+      name="hobby" 
+      value="reading"
+    >
+    <label for="hobby1">Reading</label>
+    <br>
+    <input 
+      type="checkbox" 
+      id="hobby2" 
+      name="hobby" 
+      value="traveling"
+    >
+    <label for="hobby2">Traveling</label>
+    <br>
+
+    <!-- Textarea -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Write your comments here..."></textarea>
+    <br>
+
+    <!-- Submit Button -->
+    <input 
+      id="submit" 
+      type="submit" 
+      value="Submit"
+    >
+  </form>
+</body>
+</html>
